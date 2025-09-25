@@ -4,3 +4,8 @@ information.innerText = `This app is using Chrome (v${versions.chrome()}), Node.
 document.getElementById("continue").addEventListener("click", () =>{
     window.location.href = "index.html";
 })
+
+let goldAmount = parseInt(localStorage.getItem("goldAmmount")) || 0;
+
+const goldDisplay = document.getElementById("gold");
+goldDisplay.textContent = goldAmount;

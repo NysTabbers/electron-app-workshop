@@ -4,7 +4,3 @@ information.innerText = `This app is using Chrome (v${versions.chrome()}), Node.
 document.getElementById("upgrade-page").addEventListener("click", () => {
     window.location.href = "upgrade.html";
 })
-
-document.getElementById("continue").addEventListener("click", () =>{
-    window.location.href = "index.html";
-})

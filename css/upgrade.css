@@ -1,0 +1,47 @@
+body{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(157, 226, 249);
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper-upgrades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    background-color: gold;
+    border: none;
+}
+
+button:hover{
+    box-shadow: 10px 10px 10px black;
+    cursor: pointer;
+}
+
+button.autoclick{
+    height: 60px;
+}
+
+.continue{
+    width: 125px;
+    height: 50px;
+    background-color: rgb(13, 153, 13);
+    font-size: 20px;
+    margin-top: 50px;
+}

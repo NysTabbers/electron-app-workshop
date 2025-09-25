@@ -7,14 +7,16 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
   <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
   <link rel="stylesheet" href="../css/index.css">
-  <title>Hello from Nys!</title>
+  <title>Counter Clicker</title>
 </head>
 
 <body>
   <div class="wrapper">
+    <p class="gold">Gold: <span id="gold"></span></p>
     <div class="wrapper-click-counter">
       <button id="clicker">BIG BUTTON</button>
-      <p id="counter"></p>
+      <p class="counter">Clicks: <span id="counter"></span></p>
+      <button class="upgrade" id="upgrade-page">Upgrade</button>
     </div>
     <p id="info"></p>
   </div>

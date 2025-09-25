@@ -1,12 +1,67 @@
-body{
+body {
     height: 100%;
     padding: 0px;
     margin: 0px;
-    background-color: darkgreen;
+    background-color: rgb(157, 226, 249);
 }
 
-#clicker{
+.wrapper {
+    width: 100%vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-click-counter{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#clicker {
     width: 150px;
     height: 150px;
-    background-color: darkblue;
+    background-color: rgb(236, 236, 162);
+    border: none;
+    border-radius: 100px;
+}
+
+#clicker:hover{
+    background-color: gold;
+    box-shadow: 10px 5px 5px black;
+    cursor: pointer;
+    font-size: 25px;
+    width: 160px;
+    height: 160px;
+}
+
+.counter{
+    font-size: 30px;
+}
+
+.gold{
+    font-size: 30px;
+}
+
+.upgrade{
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    background-color: orange;
+    color: black;
+    border: none;
+}
+
+.upgrade:hover{
+    cursor: pointer;
+    background-color: darkgoldenrod;
+    box-shadow: 10px 10px 10px black;
+    width: 160px;
+    height: 60px;
+    font-size: 25px;
 }

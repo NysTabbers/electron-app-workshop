@@ -2,6 +2,11 @@ const { app, BrowserWindow, ipcMain } = require('electron/main')
 
 const path = require('node:path');
 
+let userInfo = {
+  clicks: 0,
+  gold: 0
+};
+
 const createWindow = () => {
   const win = new BrowserWindow({
     width: 800,
@@ -15,6 +20,13 @@ const createWindow = () => {
 }
 
 app.whenReady().then(() => {
-  ipcMain.handle('ping', () => 'pong')
-  createWindow()
+  createWindow();
 })
+
+ipcMain.handle('get-state', () => {
+  return userInfo;
+});
+
+ipcMain.on('update-userInfo', (event, newUserInfo) => {
+  gameState = { ...userInfo, ...newUserInfo };
+});

@@ -1,5 +1,5 @@
-let count = 0;
-let goldAmmount = 0;
+let count = parseInt(localStorage.getItem("count")) || 0;
+let goldAmmount = parseInt(localStorage.getItem("goldAmmount")) || 0;
 
 const clicker = document.getElementById("clicker");
 const counter = document.getElementById("counter");

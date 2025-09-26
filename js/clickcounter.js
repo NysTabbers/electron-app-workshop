@@ -12,5 +12,6 @@ clicker.addEventListener("click", () => {
     if(count % 10 === 0){
     goldAmmount++
     gold.textContent = goldAmmount;
+    
 }
 });

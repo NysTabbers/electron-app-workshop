@@ -12,7 +12,7 @@ clicker.addEventListener("click", () => {
     count++
     counter.textContent = count;
 
-    if (count % 10 === 0) {
+    if (count % 1 === 0) {
         goldAmmount++
         gold.textContent = goldAmmount;
     }
@@ -20,3 +20,15 @@ clicker.addEventListener("click", () => {
     localStorage.setItem("count", count);
     localStorage.setItem("goldAmmount", goldAmmount);
 });
+
+function resetGame() {
+    count = 0;
+    goldAmmount = 0;
+    counter.textContent = count;
+    gold.textContent = goldAmmount;
+    localStorage.setItem("count", count);
+    localStorage.setItem("goldAmmount", goldAmmount);
+}
+
+const resetButton = document.getElementById("reset-button");
+resetButton.addEventListener("click", resetGame);

@@ -28,5 +28,5 @@ ipcMain.handle('get-state', () => {
 });
 
 ipcMain.on('update-userInfo', (event, newUserInfo) => {
-  gameState = { ...userInfo, ...newUserInfo };
+  userInfo = { ...userInfo, ...newUserInfo };
 });

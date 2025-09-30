@@ -23,6 +23,23 @@ body {
     justify-content: center;
 }
 
+#reset-button{
+    width: 75px;
+    height: 50px;
+    background-color: red;
+    border: none;
+    margin-bottom: 40px;
+}
+
+#reset-button:hover{
+    width: 85px;
+    height: 60px;
+    background-color: rgb(129, 0, 0);
+    box-shadow: 10px 5px 5px black;
+    font-size: 20px;
+    color: white;
+}
+
 #clicker {
     width: 150px;
     height: 150px;
@@ -64,4 +81,5 @@ body {
     width: 160px;
     height: 60px;
     font-size: 25px;
+    color: white;
 }
